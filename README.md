@@ -1,6 +1,6 @@
-Проверки great_expectations для наборов данных:
+**Проверки great_expectations для наборов данных:**
 
-1. DATASET: ods_billing 
+1. ***DATASET: ods_billing***
 ***
 
 1.1 column='user_id' (INT)
@@ -79,7 +79,7 @@
 								      min_value=datetime.datetime.strptime('2012-01-01', '%Y-%m-%d'))
 			Проверка всех дат в столбце на вхождение в допустимый диапазон
 
-2. DATASET: ods_issue 
+2. ***DATASET: ods_issue***
 ***
 
 2.1 column='user_id' (INT)
@@ -151,7 +151,7 @@
 			единственном числе, то данная проверка интересна с точки зрения визуализации гистограммы распределения
 			
 			
-3. DATASET: ods_payment 
+3. ***DATASET: ods_payment***
 ***
 
 3.1 column='user_id' (INT)
@@ -253,7 +253,7 @@
 			Стандартная проверка коэффициента повторяемости значений в столбце (кол-во уникальных значение/общее кол-во)
 			
 
-4. DATASET: ods_traffic 
+4. ***DATASET: ods_traffic***
 ***
 
 4.1 column='user_id' (INT)
