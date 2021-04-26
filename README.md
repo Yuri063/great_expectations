@@ -159,6 +159,7 @@
 ***
 
 3.1 column='user_id' (INT)
+
 	batch.expect_column_values_to_not_be_null(column='user_id')
 			Стандартная проверка на отсутствие значений NULL в столбце
 	batch.expect_column_values_to_be_in_type_list(column='user_id', type_list=['INTEGER', ...])
