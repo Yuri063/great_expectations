@@ -1,0 +1,498 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "yfurman.ods_traffic.warning",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "user_id",
+          "time_stamp",
+          "device_id",
+          "device_ip_addr",
+          "bytes_sent",
+          "bytes_received"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 11041,
+        "min_value": 11041
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "user_id"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "user_id",
+        "type_list": [
+          "INTEGER",
+          "integer",
+          "int",
+          "int_",
+          "int8",
+          "int16",
+          "int32",
+          "int64",
+          "uint8",
+          "uint16",
+          "uint32",
+          "uint64",
+          "INT",
+          "TINYINT",
+          "BYTEINT",
+          "SMALLINT",
+          "BIGINT",
+          "IntegerType",
+          "LongType",
+          "DECIMAL"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "user_id",
+        "max_value": null,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_unique_value_count_to_be_between",
+      "kwargs": {
+        "column": "user_id",
+        "max_value": 11041,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "time_stamp"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "time_stamp",
+        "type_list": [
+          "DATETIME",
+          "DATE",
+          "TIME",
+          "TIMESTAMP",
+          "DateType",
+          "TimestampType",
+          "datetime64",
+          "Timestamp",
+          "datetime64[ns]"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "time_stamp",
+        "max_value": 0.25369078887781904,
+        "min_value": 0.25369078887781904
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "time_stamp",
+        "max_value": "2021-01-01 00:00:00",
+        "min_value": "2012-01-01 00:00:00"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "device_id"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "device_id",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "device_id",
+        "value_set": [
+          "d001",
+          "d002",
+          "d003",
+          "d004",
+          "d005",
+          "d006",
+          "d007",
+          "d008",
+          "d009"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "device_id",
+        "max_value": 0.0008151435558373336,
+        "min_value": 0.0008151435558373336
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_unique_value_count_to_be_between",
+      "kwargs": {
+        "column": "device_id",
+        "max_value": 11041,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "device_ip_addr"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "device_ip_addr",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_match_regex",
+      "kwargs": {
+        "column": "device_ip_addr",
+        "regex": "((25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(25[0-5]|2[0-4]\\d|[01]?\\d\\d?)"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "device_ip_addr",
+        "max_value": 0.8859704736889774,
+        "min_value": 0.8859704736889774
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_unique_value_count_to_be_between",
+      "kwargs": {
+        "column": "device_ip_addr",
+        "max_value": 11041,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "bytes_sent"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "bytes_sent",
+        "type_list": [
+          "INTEGER",
+          "integer",
+          "int",
+          "int_",
+          "int8",
+          "int16",
+          "int32",
+          "int64",
+          "uint8",
+          "uint16",
+          "uint32",
+          "uint64",
+          "INT",
+          "TINYINT",
+          "BYTEINT",
+          "SMALLINT",
+          "BIGINT",
+          "IntegerType",
+          "LongType",
+          "DECIMAL"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "bytes_sent",
+        "max_value": null,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "bytes_sent",
+        "max_value": 1000000000,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "bytes_sent",
+        "max_value": 25048.088397790056,
+        "min_value": 25048.088397790056
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "bytes_sent",
+        "max_value": 25071,
+        "min_value": 25071
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": true,
+        "column": "bytes_sent",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              2667,
+              2667
+            ],
+            [
+              12512,
+              12512
+            ],
+            [
+              25071,
+              25071
+            ],
+            [
+              37615,
+              37615
+            ],
+            [
+              47506,
+              47506
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "bytes_sent",
+        "max_value": 0.8036409745494068,
+        "min_value": 0.8036409745494068
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "bytes_received"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "bytes_received",
+        "type_list": [
+          "INTEGER",
+          "integer",
+          "int",
+          "int_",
+          "int8",
+          "int16",
+          "int32",
+          "int64",
+          "uint8",
+          "uint16",
+          "uint32",
+          "uint64",
+          "INT",
+          "TINYINT",
+          "BYTEINT",
+          "SMALLINT",
+          "BIGINT",
+          "IntegerType",
+          "LongType",
+          "DECIMAL"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "bytes_received",
+        "max_value": null,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_max_to_be_between",
+      "kwargs": {
+        "column": "bytes_received",
+        "max_value": 1000000000,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_mean_to_be_between",
+      "kwargs": {
+        "column": "bytes_received",
+        "max_value": 25020.472783262387,
+        "min_value": 25020.472783262387
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_median_to_be_between",
+      "kwargs": {
+        "column": "bytes_received",
+        "max_value": 25018,
+        "min_value": 25018
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_quantile_values_to_be_between",
+      "kwargs": {
+        "allow_relative_error": true,
+        "column": "bytes_received",
+        "quantile_ranges": {
+          "quantiles": [
+            0.05,
+            0.25,
+            0.5,
+            0.75,
+            0.95
+          ],
+          "value_ranges": [
+            [
+              2507,
+              2507
+            ],
+            [
+              12606,
+              12606
+            ],
+            [
+              25018,
+              25018
+            ],
+            [
+              37673,
+              37673
+            ],
+            [
+              47477,
+              47477
+            ]
+          ]
+        }
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "bytes_received",
+        "max_value": 0.8040938320804275,
+        "min_value": 0.8040938320804275
+      },
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "columns": {
+      "bytes_received": {
+        "description": ""
+      },
+      "bytes_sent": {
+        "description": ""
+      },
+      "device_id": {
+        "description": ""
+      },
+      "device_ip_addr": {
+        "description": ""
+      },
+      "time_stamp": {
+        "description": ""
+      },
+      "user_id": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.13.14"
+  }
+}

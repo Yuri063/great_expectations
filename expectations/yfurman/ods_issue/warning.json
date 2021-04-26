@@ -1,0 +1,321 @@
+{
+  "data_asset_type": "Dataset",
+  "expectation_suite_name": "yfurman.ods_issue.warning",
+  "expectations": [
+    {
+      "expectation_type": "expect_table_columns_to_match_ordered_list",
+      "kwargs": {
+        "column_list": [
+          "user_id",
+          "start_time",
+          "end_time",
+          "title",
+          "description",
+          "service"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_table_row_count_to_be_between",
+      "kwargs": {
+        "max_value": 9774,
+        "min_value": 9774
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "user_id"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "user_id",
+        "type_list": [
+          "INTEGER",
+          "integer",
+          "int",
+          "int_",
+          "int8",
+          "int16",
+          "int32",
+          "int64",
+          "uint8",
+          "uint16",
+          "uint32",
+          "uint64",
+          "INT",
+          "TINYINT",
+          "BYTEINT",
+          "SMALLINT",
+          "BIGINT",
+          "IntegerType",
+          "LongType",
+          "DECIMAL"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_min_to_be_between",
+      "kwargs": {
+        "column": "user_id",
+        "max_value": null,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_unique_value_count_to_be_between",
+      "kwargs": {
+        "column": "user_id",
+        "max_value": 9774,
+        "min_value": 1
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "start_time"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "start_time",
+        "type_list": [
+          "DATETIME",
+          "DATE",
+          "TIME",
+          "TIMESTAMP",
+          "DateType",
+          "TimestampType",
+          "datetime64",
+          "Timestamp",
+          "datetime64[ns]"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "start_time",
+        "max_value": 0.2873951299365664,
+        "min_value": 0.2873951299365664
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "start_time",
+        "max_value": "2021-01-01 00:00:00",
+        "min_value": "2012-01-01 00:00:00"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "end_time"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "end_time",
+        "type_list": [
+          "DATETIME",
+          "DATE",
+          "TIME",
+          "TIMESTAMP",
+          "DateType",
+          "TimestampType",
+          "datetime64",
+          "Timestamp",
+          "datetime64[ns]"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "end_time",
+        "max_value": 0.2946593001841621,
+        "min_value": 0.2946593001841621
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_between",
+      "kwargs": {
+        "column": "end_time",
+        "max_value": "2021-03-31 00:00:00",
+        "min_value": "2012-01-01 00:00:00"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "title"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "title",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "title",
+        "max_value": 1.0,
+        "min_value": 1.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "description"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "description",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "description",
+        "max_value": 1.0,
+        "min_value": 1.0
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_not_be_null",
+      "kwargs": {
+        "column": "service"
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_type_list",
+      "kwargs": {
+        "column": "service",
+        "type_list": [
+          "CHAR",
+          "VARCHAR",
+          "NVARCHAR",
+          "TEXT",
+          "STRING",
+          "StringType",
+          "string",
+          "str"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_values_to_be_in_set",
+      "kwargs": {
+        "column": "service",
+        "value_set": [
+          "Connect",
+          "Disconnect",
+          "Setup Environment"
+        ]
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_proportion_of_unique_values_to_be_between",
+      "kwargs": {
+        "column": "service",
+        "max_value": 0.0003069367710251688,
+        "min_value": 0.0003069367710251688
+      },
+      "meta": {}
+    },
+    {
+      "expectation_type": "expect_column_kl_divergence_to_be_less_than",
+      "kwargs": {
+        "column": "service",
+        "partition_object": {
+          "values": [
+            "Disconnect",
+            "Connect",
+            "Setup Environment"
+          ],
+          "weights": [
+            0.3333333333333333,
+            0.3333333333333333,
+            0.3333333333333333
+          ]
+        }
+      },
+      "meta": {}
+    }
+  ],
+  "meta": {
+    "columns": {
+      "description": {
+        "description": ""
+      },
+      "end_time": {
+        "description": ""
+      },
+      "service": {
+        "description": ""
+      },
+      "start_time": {
+        "description": ""
+      },
+      "title": {
+        "description": ""
+      },
+      "user_id": {
+        "description": ""
+      }
+    },
+    "great_expectations_version": "0.13.14"
+  }
+}
